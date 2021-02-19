@@ -393,7 +393,7 @@ a {
 .bg-grey {
   width: 150%;
   background-color: #F6F6F6;
-  transform: translateX(-14.5%); }
+  transform: translateX(-16.6%); }
 
 .items-center * {
   text-align: center; }
@@ -530,11 +530,13 @@ a {
   transform: rotate(-90deg); }
   @media screen and (max-width: 420px) {
     .language__list {
-      display: block;
+      display: none;
       position: absolute;
       bottom: 80px;
       right: -15px;
-      transform: rotate(90deg); } }
+      transform: rotate(90deg); }
+      .language__list.active {
+        display: block; } }
 
 .language__item {
   cursor: pointer;
@@ -576,6 +578,9 @@ a {
 
 .skills__list {
   width: 100%; }
+  @media screen and (max-width: 991px) {
+    .skills__list {
+      justify-content: space-around; } }
 
 .skills_item {
   display: flex;
