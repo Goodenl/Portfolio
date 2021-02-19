@@ -775,6 +775,16 @@ a:focus {
     flex-direction: column;
 }
 
+@media screen and (max-width: 991px) {
+    .skills_item {
+        margin-bottom: 50px;
+    }
+
+    .skills_item:last-child {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .skills_item {
         width: 100%;
@@ -788,6 +798,7 @@ a:focus {
 }
 
 .skills__name {
+    height: 28px;
     margin-top: 23px;
     text-align: center;
     font-size: 14px;
