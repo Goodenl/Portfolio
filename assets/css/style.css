@@ -773,6 +773,7 @@ a:focus {
 
 .skills_item img {
     width: auto;
+    max-width: 80px;
     height: 80px;
 }
 
