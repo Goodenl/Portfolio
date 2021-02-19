@@ -460,8 +460,8 @@ a:focus {
 .bg-grey {
     width: 150%;
     background-color: #F6F6F6;
-    -webkit-transform: translateX(-14.5%);
-    transform: translateX(-14.5%);
+    -webkit-transform: translateX(-16.6%);
+    transform: translateX(-16.6%);
 }
 
 .items-center * {
@@ -680,12 +680,16 @@ a:focus {
 
 @media screen and (max-width: 420px) {
     .language__list {
-        display: block;
+        display: none;
         position: absolute;
         bottom: 80px;
         right: -15px;
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
+    }
+
+    .language__list.active {
+        display: block;
     }
 }
 
@@ -755,6 +759,13 @@ a:focus {
     width: 100%;
 }
 
+@media screen and (max-width: 991px) {
+    .skills__list {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
 .skills_item {
     display: -ms-flexbox;
     display: flex;
@@ -773,7 +784,6 @@ a:focus {
 
 .skills_item img {
     width: auto;
-    max-width: 80px;
     height: 80px;
 }
 
